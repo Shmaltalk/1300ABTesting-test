@@ -185,7 +185,7 @@
 
         function navigateToCheckout() {
           // Send number of items in cart to checkout page through URL params.
-          url = 'checkout.html?version=B';
+          url = 'templates/checkout.html?version=B';
           Array.from(document.getElementsByClassName('vendor-wrapper')).forEach(el => {
             numInCart = parseInt(document.getElementById(el.id + '-added').textContent, 0);
             url += ('&' + el.id + '=' + numInCart)
